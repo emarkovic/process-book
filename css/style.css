@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+}
+
+a {
+	text-decoration: none;
+	color: #666666;
+}
+
+a:hover {
+	text-decoration: underline;
+}
