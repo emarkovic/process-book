@@ -1,314 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="#intro">Introduction</a></li>
-			<li><a href="#team">The Team</a></li>
-			<li><a href="#problem">The Problem</a></li>
-			<li><a href="#ideation">Ideation</a></li>
-			<li><a href="#myIdea">My Idea</a></li>
-			<li><a href="#interviews">Interviews</a></li>
-			<li><a href="#grpIdea">Collaboration and Combination - the group idea</a></li>
-			<li><a href="#testing">User Testing</a></li>			
-			<li><a href="#final">Final Screens, Features and Rationale</a></li>
-			<li><a href="#">Video</a></li>
-			<li><a href="#">Reflection</a></li>
-		</ul>
-	</nav>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+		<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
 
-	<section id="intro">
-		<h1>Introduction</h1>
-		<p>Throughout the quarter in Info 360, we have been trying to solve the problem of students feeling unsafe walking in and around campus at night. This process book will take you through the design process of reaching a solution for this problem. Although this journey is greater than just me, it will be told through my perspective and most of the work shown will be mine.</p>
-	</section>
+	</head>
+	<body>
+		<nav>
+			<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+				<header class="mdl-layout__header mdl-layout__header--waterfall">
+					    <!-- Top row, always visible -->
+					<div class="mdl-layout__header-row">
+					      <!-- Title -->
+						<span class="mdl-layout-title">Process Book</span>
+						<div class="mdl-layout-spacer"></div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+						                  mdl-textfield--floating-label mdl-textfield--align-right">
+							<label class="mdl-button mdl-js-button mdl-button--icon"
+							               for="waterfall-exp">
+								<i class="material-icons">search</i>
+							</label>
+							<div class="mdl-textfield__expandable-holder">
+								<input class="mdl-textfield__input" type="text" name="sample"
+							                 id="waterfall-exp" placeholder="Search a section">
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="mdl-layout__drawer">
+				    <span class="mdl-layout-title">Process book</span>
+				    <nav class="mdl-navigation">
+						<a class="mdl-navigation__link" href="#intro">Introduction</a>
+						<a class="mdl-navigation__link" href="#team">The Team</a>
+						<a class="mdl-navigation__link" href="#problem">The Problem</a>
+						<a class="mdl-navigation__link" href="#ideation">Ideation</a>
+						<a class="mdl-navigation__link" href="#myIdea">My Idea</a>
+						<a class="mdl-navigation__link" href="#interviews">Interviews</a>
+						<a class="mdl-navigation__link" href="#grpIdea">Collaboration and Combination - the group idea</a>
+						<a class="mdl-navigation__link" href="#testing">User Testing</a>
+						<a class="mdl-navigation__link" href="#final">Final Screens, Features and Rationale</a>
+						<a class="mdl-navigation__link" href="#">Video</a>
+						<a class="mdl-navigation__link" href="#">Reflection</a>
+				    </nav>
+				  </div>
+				<main class="mdl-layout__content">
+				<div class="page-content"><!-- Your content goes here --></div>
+				</main>
+			</div>	
+		</nav>	
+		<section id="intro">
+			<div class="container">
+				<h1>Introduction</h1>
+				<p>Throughout the quarter in Info 360, we have been trying to solve the problem of students feeling unsafe walking in and around campus at night. This process book will take you through the design process of reaching a solution for this problem. Although this journey is greater than just me, it will be told through my perspective and most of the work shown will be mine.</p>
+			</div>
+		</section>
 
-	<section id="team">
-		<h1>The Team</h1>
-		<p>
-			Working in a team was necessary to tackling this problem. Complex problems cannot be solved with just a singular perspective. A solution is a tapestry of different perspectives woven through each other. These perspectives came together to struggle, compromise and agree to create a strong solution.
-		</p>
-		<p>
-			The contributors of these perspectives were Cameron Doane, Eric Riner, and Kaitlin Lockhart. Eric and Kaitlin contributed more to prototypes and Cameron and I contributed more to write-ups. The rest of the work was divided evenly between the four of us.
-		</p>
-		<div>
-			<img src="img/cam.jpg" alt="cameron">
-			<img src="img/eric.jpg" alt="cameron">
-			<img src="img/kait.jpg" alt="kaitlin">
-			<img src="img/me.jpg" alt="ena">
-		</div>
-	</section>
+ 		<section id="team">
+	 		<div class="container">
+				<h1>The Team</h1>
+				<p>
+					Working in a team was necessary to tackling this problem. Complex problems cannot be solved with just a singular perspective. A solution is a tapestry of different perspectives woven through each other. These perspectives came together to struggle, compromise and agree to create a strong solution.
+				</p>
+				<p>
+					The contributors of these perspectives were Cameron Doane, Eric Riner, and Kaitlin Lockhart. The work was divided evenly, but we all had our separate focuses.
+				</p>
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--6-col">
+						<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						  	<div id="cameron" class="mdl-card__title mdl-card--expand">
+						    	<h2 class="mdl-card__title-text">Cameron</h2>
+						  	</div>
+						  	<div class="mdl-card__supporting-text">
+						    	Cameron focused on written assignments.
+						 	 </div>				 	
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--6-col">
+						<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						  	<div id="eric" class="mdl-card__title mdl-card--expand">
+						    	<h2 class="mdl-card__title-text">Eric</h2>
+						  	</div>
+						  	<div class="mdl-card__supporting-text">
+						    	Eric, the prototype master. 
+						 	 </div>				 	
+						</div>
+					</div>
+				</div>		
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--6-col">
+						<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						  	<div id="kaitlin" class="mdl-card__title mdl-card--expand">
+						    	<h2 class="mdl-card__title-text">Kaitlin</h2>
+						  	</div>
+						  	<div class="mdl-card__supporting-text">
+						    	Kaitlin helped a lot with prototypes. She also helped with written assignments.
+						 	 </div>				 	
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--6-col">
+						<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						  	<div id="ena" class="mdl-card__title mdl-card--expand">
+						    	<h2 class="mdl-card__title-text">Ena</h2>
+						  	</div>
+						  	<div class="mdl-card__supporting-text">
+						    	I also focused on written assignments, but I did dip my toes into other topics as well.
+						 	 </div>				 	
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</section>
 
-	<section id="problem">
-		<h1>The Problem</h1>
-		<p>
-			I joined the journey a week late due to my previous group getting disbanded. By the time I had joined, a problem statement had been chosen. The problem statement is as follows: <strong>“students feel unsafe walking in and around campus at night”</strong>. 
-		</p>
-		<p>
-			I do not know the definitive reason as to my my teammates chose this problem but it was a good choice that proved to be adequately challenging. I think this was a good problem to tackle because it is a real problem that many students can relate to and many students do feel scared walking around at night. 
-		</p>
-		<p>
-			The reason why it is scary is because we live in an urban area with lots of people and so crime happens at a much higher rate. We know crime is close because we, as students, actually receive emails alerting of us criminal activity.
-		</p>
-		<p>
-			Statistics: 2014 : 20+ cases of stalking, 18+ cases of cases of assault on/around campus.
-		</p>
-	</section>
+		<section id="problem">
+			<div class="container">
+				<h1>The Problem</h1>
+				<p>
+					I joined the journey a week late due to my previous group getting disbanded. By the time I had joined, a problem statement had been chosen. The problem statement is as follows:  
+				</p>
+				<h3 id="problem-statement">“students feel unsafe walking in and around campus at night”</h3>
+				<p>
+					I do not know the definitive reason as to why my teammates chose this problem since I joined the team late but it was a good choice that proved to be adequately challenging. I think this was a good problem to tackle because it is a real problem that many students can relate to and many students do feel scared walking around at night. 
+				</p>
+				<p>
+					The reason why it is scary is because we live in an urban area with lots of people and so crime happens at a much higher rate. We know crime is close because we, as students, actually receive emails alerting of us criminal activity.
+				</p>
+				<p>
+					Statistics: 2014 : 20+ cases of stalking, 18+ cases of cases of assault on/around campus.
+				</p>
+			</div>
+		</section>
 
-	<section id="ideation">
-		<h1>Ideation</h1>
-		<p>
-			After the problem had been chosen, it was time to find a solution. We were each supposed to come up with 40 ideas for solutions to our problem. 20 of the ideas had to be existing and the other 20 had to original. The focus was on quantity and not quality. 
-		</p>
-		<p>
-			The purpose of this exercise was to practice ideation. The more ideas produced, the more more probably it was that a really good one would be produced. It was interesting to go through this activity and it forced us to think of the problem in a new way. It also forced us to exhaust all our biased ideas and start thinking out of the box. A good solution was out there, we just had to put in the effort and search for it.
-		</p>
-		<div>
-			<img src="img/pi1.jpg" alt="40 ideas pt. 1">
-			<img src="img/pi2.jpg" alt="40 ideas pt. 2">
-		</div>
-	</section>
+		<section id="ideation">
+			<div class="container">
+				<h1>Ideation</h1>
+				<p>
+					After the problem had been chosen, it was time to find a solution. We were each supposed to come up with 40 ideas for solutions to our problem. 20 of the ideas had to be existing and the other 20 had to original. The focus was on quantity and not quality. 
+				</p>
+				<p>
+					The purpose of this exercise was to practice ideation. The more ideas produced, the more more probably it was that a really good one would be produced. It was interesting to go through this activity and it forced us to think of the problem in a new way. It also forced us to exhaust all our biased ideas and start thinking out of the box. A good solution was out there, we just had to put in the effort and search for it.
+				</p>
+				<div>
+					<img src="img/pi1.jpg" alt="40 ideas pt. 1">
+					<img src="img/pi2.jpg" alt="40 ideas pt. 2">
+				</div>
+			</div>
+		</section>
 
-	<section id="myIdea">
-		<h1>My Idea</h1>
-		<p>
-			After ideation, I focused on a broad solution that involved informing students of when sunset is and where the emergency lights on campus are. This solution could take the form of an application or simply just signs in and around libraries and other places where students tend to stay late. For the ease of prototyping and interviewing, it has taken the form of a mobile application.
-		</p>
-		<p>
-			I have always been fond of the saying “prevention is cheaper than treatment” so after ideation, I wanted to provide users with a solution that would allow them to avoid dangerous situations before they happen. I was interested in what could be done with sunset, lighting, and emergency light information and how it could prevent the user from finding trouble but also help the user get out of trouble.
-		</p>
-		<p>
-			With that inspiration, the solution was designed with three cases in mind: the preventive case, the common case and the defensive case. Sunset information satisfies the preventive case because users will be more likely to get to their destinations before dark if they are aware of when it gets dark. Lighting information satisfies the common case. Providing users with accurate lighting information would be simplest way to help and motivate users to take safer routes. Emergency light information satisfies the defensive case because in an emergency, the user should know where to go to get help. 
-		</p>
-		<p>
-			Although this solution could take many forms, I decided to have it take the form of a mobile application because that would simplify the prototyping process as well as the interview/user testing process. The prototype should show sunset on the main screen and then it would allow the user to access two more screens. One would show well lit areas on a campus map and the other would show the locations of the blue emergency lights on a campus map.
-		</p>
+		<section id="myIdea">
+			<div class="container">
+				<h1>My Idea</h1>
+				<p>
+					After ideation, I focused on a broad solution that involved informing students of when sunset is and where the emergency lights on campus are. This solution could take the form of an application or simply just signs in and around libraries and other places where students tend to stay late. For the ease of prototyping and interviewing, it has taken the form of a mobile application.
+				</p>
+				<p>
+					I have always been fond of the saying “prevention is cheaper than treatment” so after ideation, I wanted to provide users with a solution that would allow them to avoid dangerous situations before they happen. I was interested in what could be done with sunset, lighting, and emergency light information and how it could prevent the user from finding trouble but also help the user get out of trouble.
+				</p>
+				<p>
+					With that inspiration, the solution was designed with three cases in mind: the preventive case, the common case and the defensive case. Sunset information satisfies the preventive case because users will be more likely to get to their destinations before dark if they are aware of when it gets dark. Lighting information satisfies the common case. Providing users with accurate lighting information would be simplest way to help and motivate users to take safer routes. Emergency light information satisfies the defensive case because in an emergency, the user should know where to go to get help. 
+				</p>
+				<p>
+					Although this solution could take many forms, I decided to have it take the form of a mobile application because that would simplify the prototyping process as well as the interview/user testing process. The prototype should show sunset on the main screen and then it would allow the user to access two more screens. One would show well lit areas on a campus map and the other would show the locations of the blue emergency lights on a campus map.
+				</p>
 
-		<div>
-			<img src="img/pi7.png" alt="sunset idea">
-			<img src="img/pi8.png" alt="lighting idea">
-			<img src="img/pi9.png" alt="blue light idea">
-		</div>
+				<div>
+					<img src="img/pi7.png" alt="sunset idea">
+					<img src="img/pi8.png" alt="lighting idea">
+					<img src="img/pi9.png" alt="blue light idea">
+				</div>
 
-		<div>
-			<img src="img/p11.jpg" alt="">
-			<img src="img/p12.jpg" alt="">
-			<img src="img/p13.jpg" alt="">
-			<img src="img/p14.jpg" alt="">
-		</div>
-	</section>
+				<div>
+					<img src="img/p11.jpg" alt="">
+					<img src="img/p12.jpg" alt="">
+					<img src="img/p13.jpg" alt="">
+					<img src="img/p14.jpg" alt="">
+				</div>
+			</div>
+		</section>
 
-	<section id="interviews">
-		<h1>Interviews</h1>
+		<section id="interviews">
+			<div class="container">
+				<h1>Interviews</h1>
 
-		<h2>Does the information provided in this application make you feel safer?</h2>
-		<h2>Is this information useful at all?</h2>
-		<h2>What other information would you recommend?</h2>
-		<h2>Should this be an app? Would it be more helpful as signs around campus?</h2>
+				<h2>Does the information provided in this application make you feel safer?</h2>
+				<h2>Is this information useful at all?</h2>
+				<h2>What other information would you recommend?</h2>
+				<h2>Should this be an app? Would it be more helpful as signs around campus?</h2>
 
-		<p>
-			<h3>Jonathan</h3>
-			<ul>
-				<li>Was confused about the interface of the application.</li>
-				<li>Question answers: no, no, directions + compass + ‘you are here’ pin, mobile app.</li>
-			</ul>
-		</p>
+				<p>
+					<h3>Jonathan</h3>
+					<ul>
+						<li>Was confused about the interface of the application.</li>
+						<li>Question answers: no, no, directions + compass + ‘you are here’ pin, mobile app.</li>
+					</ul>
+				</p>
 
-		<p>
-			<h3>Kodlee</h3>
-			<ul>
-				<li>Liked the simple design.</li>
-				<li>Question answers: yes, yes, ‘you are here’ pin + button to call for emergency, signs/stands around campus</li>
-			</ul>
-		</p>
+				<p>
+					<h3>Kodlee</h3>
+					<ul>
+						<li>Liked the simple design.</li>
+						<li>Question answers: yes, yes, ‘you are here’ pin + button to call for emergency, signs/stands around campus</li>
+					</ul>
+				</p>
 
-		<h2>Insights</h2>
-		<p>
-			Lots of work to do with this solution. Not sure which direction to take it. It is a static app, but do users want to download a static app? A purely informational solution could not take the form of an application. Users will be expecting more functionality. Or must the solution include other features to be the ‘right’ solution?
-		</p>
-	</section>
+				<h2>Insights</h2>
+				<p>
+					Lots of work to do with this solution. Not sure which direction to take it. It is a static app, but do users want to download a static app? A purely informational solution could not take the form of an application. Users will be expecting more functionality. Or must the solution include other features to be the ‘right’ solution?
+				</p>
+			</div>
+		</section>
 
-	<section id="grpIdea">
-		<h1>Collaboration and Combination - the group idea</h1>
-		<p>					
-			We came together as a group and discussed our different solutions. As of this point, there were four different solutions on the table. 
-		</p>
-		<p>
-			There was a gamified safety mobile application. You would get points if you practiced walking home safely (look out your headphones, didn’t use your phone, etc).  This idea encouraged users to be aware of their surroundings by putting away possible distractions. It would also protect the user against being an easy target for thieves.
-		</p>
-		<p>
-			A mobile application that displayed which areas on campus were best lit. The lighting would change dynamically based on the time of day. For example, when the lights were about go to on, they would fade in and increase in intensity as it got darker outside. This solution was designed to increase the user’s mindfulness of their environment and avoid trouble by getting to their destination before dark.
-		</p>
-		<p>
-			A suicide switch mobile application where you hold down or keep your finger on a certain part of the screen for the duration to your destination. If you ever released the switch, the police would be called. This gives the user a sense of security because the police were just moments away if anything dangerous were to happen.
-		</p>
-		<p>
-			And finally, there was the solution I previously talked about with information about sunset, lighting and blue emergency lights. 
-		</p>
-		<p>
-			All of the solutions were great but none of them were at the level of completeness needed to solve our big problem of “students feel unsafe walking in and around campus at night”. But it was impossible to just choose one of the solutions, so we had to break each of them down and look for features that could mesh together and move us forward.
-		</p>
-		<p>
-			Breaking it all up we had the idea of a gamified system, a suicide emergency switch, sunset information, and blue light information.
-		</p>
-		<p>
-			What to do this all these pieces?? 
-		</p>
-		<div>
-			<img src="img/pi3.png" alt="companion app">
-			<img src="img/pi4.png" alt="call 911">
-			<img src="img/pi5.png" alt="rewards app">
-			<img src="img/pi6.png" alt="kill switch app">
-			<img src="img/pi7.png" alt="sunset">
-		</div>
-		<p>
-			Cameron and I wanted to consolidate our ideas into one. We thought our pieces would work nicely together. It would basically be my solution but with dynamic lighting. We thought about it a little bit but when we asked ourselves if this kind of solution would change our own habits we ultimately decided that it would not. We decided that, even if we knew the better lit paths, we should still take our usual routes because they saved us time. We asked a few other students and their answers were similar to ours.
-		</p>
+		<section id="grpIdea">
+			<div class="container">
+				<h1>Collaboration and Combination - the group idea</h1>
+				<p>					
+					We came together as a group and discussed our different solutions. As of this point, there were four different solutions on the table. 
+				</p>
+				<p>
+					There was a gamified safety mobile application. You would get points if you practiced walking home safely (look out your headphones, didn’t use your phone, etc).  This idea encouraged users to be aware of their surroundings by putting away possible distractions. It would also protect the user against being an easy target for thieves.
+				</p>
+				<p>
+					A mobile application that displayed which areas on campus were best lit. The lighting would change dynamically based on the time of day. For example, when the lights were about go to on, they would fade in and increase in intensity as it got darker outside. This solution was designed to increase the user’s mindfulness of their environment and avoid trouble by getting to their destination before dark.
+				</p>
+				<p>
+					A suicide switch mobile application where you hold down or keep your finger on a certain part of the screen for the duration to your destination. If you ever released the switch, the police would be called. This gives the user a sense of security because the police were just moments away if anything dangerous were to happen.
+				</p>
+				<p>
+					And finally, there was the solution I previously talked about with information about sunset, lighting and blue emergency lights. 
+				</p>
+				<p>
+					All of the solutions were great but none of them were at the level of completeness needed to solve our big problem of “students feel unsafe walking in and around campus at night”. But it was impossible to just choose one of the solutions, so we had to break each of them down and look for features that could mesh together and move us forward.
+				</p>
+				<p>
+					Breaking it all up we had the idea of a gamified system, a suicide emergency switch, sunset information, and blue light information.
+				</p>
+				<p>
+					What to do this all these pieces?? 
+				</p>
+				<div>
+					<img src="img/pi3.png" alt="companion app">
+					<img src="img/pi4.png" alt="call 911">
+					<img src="img/pi5.png" alt="rewards app">
+					<img src="img/pi6.png" alt="kill switch app">
+					<img src="img/pi7.png" alt="sunset">
+				</div>
+				<p>
+					Cameron and I wanted to consolidate our ideas into one. We thought our pieces would work nicely together. It would basically be my solution but with dynamic lighting. We thought about it a little bit but when we asked ourselves if this kind of solution would change our own habits we ultimately decided that it would not. We decided that, even if we knew the better lit paths, we should still take our usual routes because they saved us time. We asked a few other students and their answers were similar to ours.
+				</p>
 
-		<h2>Is this solution strong enough to break users’ habits?</h2>
-		<p>
-			Although we agreed the information was useful, the solution was not going to be powerful enough to instill change in a majority of users. We decided that our solution needed to be designed in a way that assisted users despite their current habits rather than a solution that tried to instill new habits. 
-		</p>
-		<p>
-			Our group solution became a combination of a gamified system, a suicide switch and sunset information. Our new design allowed users to be able to use the application regardless of nighttime or daytime, be able to use the application on or around campus and to allow users to send messages notifying contacts of their travels.
-		</p>
+				<h2>Is this solution strong enough to break users’ habits?</h2>
+				<p>
+					Although we agreed the information was useful, the solution was not going to be powerful enough to instill change in a majority of users. We decided that our solution needed to be designed in a way that assisted users despite their current habits rather than a solution that tried to instill new habits. 
+				</p>
+				<p>
+					Our group solution became a combination of a gamified system, a suicide switch and sunset information. Our new design allowed users to be able to use the application regardless of nighttime or daytime, be able to use the application on or around campus and to allow users to send messages notifying contacts of their travels.
+				</p>
+			</div>
+		</section>
 
-		<div>
-			
-		</div>
-	</section>
+		<section id="testing">
+			<div class="container">
+				<h1>User Testing</h1>
+				<p>
+					Five other students reviewed the prototype of our solution. This section will describe what we ended up learning about our design.
+				</p>
+				<p>
+					Overall, our prototype had a good impression on the testers. Most of them agreed that this solution would make them feel safer walking home at night. They also liked the idea of the app using GPS to track movements and the “suicide switch” get escape from uncomfortable situations.
+				</p>
+				<p>
+					Some issues came up regarding the placement of UI elements and feedback from the app. Some examples include having to press the “Next” button at the bottom of the contact and destination option pages and some button inconsistencies. It is possible that this was simply a limitation of the medium. Because it was a paper prototype, we had no ability to change colors or highlight the “Next” button. This color change or highlight would help draw the user's attention to the button and potentially prompt them to continue through the application.
+				</p>
+				<p>
+					Another issue was with the “Safety Mode” and the amount of time the user had to type in their UW Net ID if they released the “suicide switch”. We thought that 10 seconds was an appropriate amount of time for an accidental release and for responding to an emergency situation. Participants were split on whether it was a sufficient amount of time to enter their UW Net IDs. Some good points mentioned were that the stress from the countdown induces typos and mistakes and that some students don’t have their UW Net ID memorized. 
+				</p>
+				<p>
+					Other suggestions for “Safety Mode” aimed at reducing the frequency of accidents. In our current design, you must have your thumb on a portion of the screen that we have designated to be a “button”. This is very prone to accidental release. Instead maybe we should design a “suicide switch” that is more tactile. 
+				</p>
+				<p>
+					Based on these interviews, we can consider the design of our solution to be a success! Users felt the problem was addressed in a complete way and it succeeded in increasing their sense of security. The design of the prototype itself, however, needed some work.
+				</p>
+			</div>
+		</section>
 
-	<section id="testing">
-		<h1>User Testing</h1>
-		<p>
-			Five other students reviewed the prototype of our solution. This section will describe what we ended up learning about our design.
-		</p>
-		<p>
-			Overall, our prototype had a good impression on the testers. Most of them agreed that this solution would make them feel safer walking home at night. They also liked the idea of the app using GPS to track movements and the “suicide switch” get escape from uncomfortable situations.
-		</p>
-		<p>
-			Some issues came up regarding the placement of UI elements and feedback from the app. Some examples include having to press the “Next” button at the bottom of the contact and destination option pages and some button inconsistencies. It is possible that this was simply a limitation of the medium. Because it was a paper prototype, we had no ability to change colors or highlight the “Next” button. This color change or highlight would help draw the user's attention to the button and potentially prompt them to continue through the application.
-		</p>
-		<p>
-			Another issue was with the “Safety Mode” and the amount of time the user had to type in their UW Net ID if they released the “suicide switch”. We thought that 10 seconds was an appropriate amount of time for an accidental release and for responding to an emergency situation. Participants were split on whether it was a sufficient amount of time to enter their UW Net IDs. Some good points mentioned were that the stress from the countdown induces typos and mistakes and that some students don’t have their UW Net ID memorized. 
-		</p>
-		<p>
-			Other suggestions for “Safety Mode” aimed at reducing the frequency of accidents. In our current design, you must have your thumb on a portion of the screen that we have designated to be a “button”. This is very prone to accidental release. Instead maybe we should design a “suicide switch” that is more tactile. 
-		</p>
-		<p>
-			Based on these interviews, we can consider the design of our solution to be a success! Users felt the problem was addressed in a complete way and it succeeded in increasing their sense of security. The design of the prototype itself, however, needed some work.
-		</p>
-	</section>
+		<section id="final">
+			<div class="container">
+				<h1>Final Screens, Features and Rationale</h1>
 
-	<section id="final">
-		<h1>Final Screens, Features and Rationale</h1>
+				<h2>Home Screens</h2>
+				<p>
+					<strong>Indication of current time along with countdown till sunset/sunrise. </strong>
+					<br>
+					This piece was incorporated because interviewees mentioned that they tend to lose track of time when studying and before they knew it, it was dark outside. 
+					<br>
+					To respond to this need, we designed to homescreen with a sun or moon as well as test saying whether it was dark or light out.
+					<br>
+					By having a clear indication of what the time it is, the current light levels outside, and the time till that light level changes, users will be more aware of when they should leave in order to have the safest place home.
+				</p>
+				<div>
+					<img src="img/pf1.png" alt="home screen 1">
+					<img src="img/pf2.png" alt="home screen 2">
+				</div>
 
-		<h2>Home Screens</h2>
-		<p>
-			<strong>Indication of current time along with countdown till sunset/sunrise. </strong>
-			<br>
-			This piece was incorporated because interviewees mentioned that they tend to lose track of time when studying and before they knew it, it was dark outside. 
-			<br>
-			To respond to this need, we designed to homescreen with a sun or moon as well as test saying whether it was dark or light out.
-			<br>
-			By having a clear indication of what the time it is, the current light levels outside, and the time till that light level changes, users will be more aware of when they should leave in order to have the safest place home.
-		</p>
-		<div>
-			<img src="img/pf1.png" alt="home screen 1">
-			<img src="img/pf2.png" alt="home screen 2">
-		</div>
+				<h2>Contact selection and messaging</h2>
+				<p>
+					<strong>Ability to choose contact to notify your walk home.</strong>
+					<br>
+					Based on interviews we discovered that people thought it was a good idea to text their friends before they leave to and after they arrive at their destination. Texting before leaving was successful but people would often forget to text their friends upon their arrival to their destination.The friends would get worried and the whole system would fall apart. 
+					<br>
+					We felt our design needed this correspondence feature. We improved it by having the app automatically send a text before leaving and also when the user arrives at their destination.
+				</p>
+				<div>
+					<img src="img/pf3.png" alt="contact screen 1">
+					<img src="img/pf4.png" alt="contact screen 2">
+					<img src="img/pf5.png" alt="contact screen 3">
+					<img src="img/pf6.png" alt="contact screen 4">
+				</div>
 
-		<h2>Contact selection and messaging</h2>
-		<p>
-			<strong>Ability to choose contact to notify your walk home.</strong>
-			<br>
-			Based on interviews we discovered that people thought it was a good idea to text their friends before they leave to and after they arrive at their destination. Texting before leaving was successful but people would often forget to text their friends upon their arrival to their destination.The friends would get worried and the whole system would fall apart. 
-			<br>
-			We felt our design needed this correspondence feature. We improved it by having the app automatically send a text before leaving and also when the user arrives at their destination.
-		</p>
-		<div>
-			<img src="img/pf3.png" alt="contact screen 1">
-			<img src="img/pf4.png" alt="contact screen 2">
-			<img src="img/pf5.png" alt="contact screen 3">
-			<img src="img/pf6.png" alt="contact screen 4">
-		</div>
+				<h2>Destination selection</h2>
+				<p>
+					<strong>Ability to choose destination.</strong>
+					<br>
+					The user is prompted to choose a destination so that they can be tracked by GPS. This allows the app to know when the user has reached their destination and to then send a message of arrival to their selected contact.
+					<br>
+					This section can be skipped by the user but is always displayed as a reminder of best/safest practices.
+				</p>
+				<div>
+					<img src="img/pf7.png" alt="destination screen 1">
+					<img src="img/pf8.png" alt="destination screen 2">
+					<img src="img/pf9.png" alt="destination screen 3">
+				</div>
 
-		<h2>Destination selection</h2>
-		<p>
-			<strong>Ability to choose destination.</strong>
-			<br>
-			The user is prompted to choose a destination so that they can be tracked by GPS. This allows the app to know when the user has reached their destination and to then send a message of arrival to their selected contact.
-			<br>
-			This section can be skipped by the user but is always displayed as a reminder of best/safest practices.
-		</p>
-		<div>
-			<img src="img/pf7.png" alt="destination screen 1">
-			<img src="img/pf8.png" alt="destination screen 2">
-			<img src="img/pf9.png" alt="destination screen 3">
-		</div>
+				<h2>Trip in progress</h2>
+				<div>
+					<img src="img/pf10.png" alt="progress screen 1">
+					<img src="img/pf11.png" alt="progress screen 2">
+				</div>
 
-		<h2>Trip in progress</h2>
-		<div>
-			<img src="img/pf10.png" alt="progress screen 1">
-			<img src="img/pf11.png" alt="progress screen 2">
-		</div>
+				<h2>Safety mode</h2>
+				<p>
+					<strong>Button that calls police when released after a short delay.</strong>
+					<br>
+					In order to have a more complete solution, we needed to incorporate immediate response from police in emergency situations.
+					<br>
+					To facilitate this we designed a button that is to be held down by the user in a stressful situation. If this button is ever released it will trigger a delay of 10 seconds before calling the local UW police. The GPS tracking provides the police with your location. If the phone is taken, the call won’t be deactivated unless a UW NetID is entered.
+				</p>
+				<div>
+					<img src="img/pf12.png" alt="safe screen 1">
+					<img src="img/pf13.png" alt="safe screen 2">
+					<img src="img/pf14.png" alt="safe screen 3">
+				</div>
 
-		<h2>Safety mode</h2>
-		<p>
-			<strong>Button that calls police when released after a short delay.</strong>
-			<br>
-			In order to have a more complete solution, we needed to incorporate immediate response from police in emergency situations.
-			<br>
-			To facilitate this we designed a button that is to be held down by the user in a stressful situation. If this button is ever released it will trigger a delay of 10 seconds before calling the local UW police. The GPS tracking provides the police with your location. If the phone is taken, the call won’t be deactivated unless a UW NetID is entered.
-		</p>
-		<div>
-			<img src="img/pf12.png" alt="safe screen 1">
-			<img src="img/pf13.png" alt="safe screen 2">
-			<img src="img/pf14.png" alt="safe screen 3">
-		</div>
+				<h2>Achievements</h2>
+				<p>
+					<strong>Achievements for user.</strong>
+					<br>
+					Achievements help motivate the user to use the application whenever they are walking at night. Some of these achievements would include “Complete your first trip” or “Take a trip longer than 1 mile”. These achievements would be displayed as a small circular badge inside the “Achievements” section of the app.
+				</p>
+				<div>
+					<img src="img/pf15.png" alt="achievement screen 1">
+					<img src="img/pf16.png" alt="achievement screen 2">
+					<img src="img/pf17.png" alt="achievement screen 3">
+				</div>
+			</div>
+		</section>
 
-		<h2>Achievements</h2>
-		<p>
-			<strong>Achievements for user.</strong>
-			<br>
-			Achievements help motivate the user to use the application whenever they are walking at night. Some of these achievements would include “Complete your first trip” or “Take a trip longer than 1 mile”. These achievements would be displayed as a small circular badge inside the “Achievements” section of the app.
-		</p>
-		<div>
-			<img src="img/pf15.png" alt="achievement screen 1">
-			<img src="img/pf16.png" alt="achievement screen 2">
-			<img src="img/pf17.png" alt="achievement screen 3">
-		</div>
-	</section>
+		<section id="video">
+			<div class="container">
+				<h1>The video</h1>
+				<p>
+					The idea for our video was to do a quick sketch comparing a situation where a user did not use our application on their way home and one where the user did use our application on their way home. The sketch will include slides from our prototype as well as a demo. One thing that we did not get to include was the “achievement” portion of our solution.
+				</p>
+			</div>
+		</section>
 
-	<section id="video">
-		<h1>The video</h1>
-		<p>
-			The idea for our video was to do a quick sketch comparing a situation where a user did not use our application on their way home and one where the user did use our application on their way home. The sketch will include slides from our prototype as well as a demo. One thing that we did not get to include was the “achievement” portion of our solution.
-		</p>
+		<section id="reflection">
+			<div class="container">
+				<h1>Reflection</h1>
+				<p>
+					It has been a difficult but rewarding quarter in Info 360! I really enjoyed the whole process of design. I want to comment specifically of ideation, picking an individual idea, combining ideas, collaborating and letting go of previous ideas.
+				</p>
+				<p>
+					Ideation was one of the hardest parts of the process. Coming up with 40 ideas sounded daunting and pretty much impossible. I will admit, I hated having to struggle to think of new ideas but I do appreciate the effects of blood, sweat and tears. It forces me to think of new ideas in new ways and to find inspiration in new places. 
+				</p>
+				<p>
+					Picking my own solution and choosing what to design for was a great experience as well. It emphasized how much little changes matter to the usefulness of the solution. The interviews and discussions that went along with this step made me think of the problem from a completely new perspective.
+				</p>
+				<p>
+					Combining, collaborating and letting go was one of the most important steps of this whole process. It encouraged all of us to set our own pride aside, look at the information we gathered, and design a solution that would respond to that information. This step separated the idea and design from its ideator/designer. The whole team really came together and worked for the best design possible. 
+				</p>
+				<p>
+					The design process is very important for solving problems well. I am glad I got to learn these skills.		
+				</p>
+			</div>
+		</section> 
 		
-	</section>
+		<footer class="mdl-mini-footer">
+		  <div class="mdl-mini-footer__left-section">
+		    <div class="mdl-logo">Ena Markovic</div>
+		    <ul class="mdl-mini-footer__link-list">
+		      <li><a href="#">Info 360</a></li>
+		      <li><a href="#">Winter 2016</a></li>
+		    </ul>
+		  </div>
+		</footer>
 
-	<section id="reflection">
-		<h1>Reflection</h1>
-		<p>
-			It has been a difficult but rewarding quarter in Info 360! I really enjoyed the whole process of design. I want to comment specifically of ideation, picking an individual idea, combining ideas, collaborating and letting go of previous ideas.
-		</p>
-		<p>
-			Ideation was one of the hardest parts of the process. Coming up with 40 ideas sounded daunting and pretty much impossible. I will admit, I hated having to struggle to think of new ideas but I do appreciate the effects of blood, sweat and tears. It forces me to think of new ideas in new ways and to find inspiration in new places. 
-		</p>
-		<p>
-			Picking my own solution and choosing what to design for was a great experience as well. It emphasized how much little changes matter to the usefulness of the solution. The interviews and discussions that went along with this step made me think of the problem from a completely new perspective.
-		</p>
-		<p>
-			Combining, collaborating and letting go was one of the most important steps of this whole process. It encouraged all of us to set our own pride aside, look at the information we gathered, and design a solution that would respond to that information. This step separated the idea and design from its ideator/designer. The whole team really came together and worked for the best design possible. 
-		</p>
-		<p>
-			The design process is very important for solving problems well. I am glad I got to learn these skills.		
-		</p>
-	</section>
-</body>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

@@ -1,19 +1,99 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
 	font-family: 'Open Sans', sans-serif;
 	color: #666666;
+	font-weight: lighter;
+	font-size: 18pt;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: greyscale;
+	-moz-font-feature-settings: 'liga' on;
+
+	margin-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: lighter;
 }
 
-a {
-	text-decoration: none;
-	color: #666666;
+
+#intro h1 {
+	margin-top: 0px;	
 }
 
-a:hover {
-	text-decoration: underline;
+.mdl-layout__container {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+.mdl-mini-footer {
+	margin-top: 10px;
+}
+
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.demo-card-square.mdl-card {
+	width: 320px;
+	height: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.demo-card-square > .mdl-card__title {
+	color: #fff;
+
+}
+
+.demo-card-square > #cameron {
+	background: url('../img/cam.jpg') bottom right 15% no-repeat;
+	background-size: cover;
+}
+
+.demo-card-square > #eric {
+	background: url('../img/eric.jpg') bottom right 15% no-repeat;
+	background-size: cover;
+}
+
+.demo-card-square > #kaitlin {
+	background: url('../img/kait1.jpg') bottom right 15% no-repeat;
+	background-size: cover;
+}
+
+.demo-card-square > #ena {
+	background: url('../img/me.jpg') bottom right 15% no-repeat;
+	background-size: cover;
+}
+
+#problem-statement {
+	text-align: center;
+}
+
+@media(min-width: 768px) {
+	.container {
+		width: 748px;
+	}
+}
+
+@media(min-width: 992px) {
+	.container {
+		width: 972px;
+	}
+}
+
+@media(min-width: 1200px) {
+	.container {
+		width: 1180px;
+	}
 }
